@@ -1,0 +1,95 @@
+{
+  "siteInfo": {
+    "title": "Noeva's Space",
+    "description": "收集灵感，记录生活。这是我的个人数字花园。",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=ffdfbf"
+  },
+  "sections": [
+    {
+      "id": "docs",
+      "title": "📚 藏书阁",
+      "desc": "精选文档与阅读材料",
+      "type": "pdf",
+      "items": [
+        {
+          "title": "2024 年度计划",
+          "desc": "关于未来一年的详细规划与目标拆解",
+          "url": "#",
+          "date": "2024-01-15"
+        },
+        {
+          "title": "设计灵感手册",
+          "desc": "收集的优秀UI/UX设计案例分析",
+          "url": "#",
+          "date": "2023-12-20"
+        }
+      ]
+    },
+    {
+      "id": "gallery",
+      "title": "🖼️ 影像集",
+      "desc": "定格美好瞬间",
+      "type": "image",
+      "items": [
+        {
+          "title": "秋日午后",
+          "desc": "阳光洒在书桌上的温暖时刻",
+          "url": "https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=800&q=80",
+          "date": "2023-11-05"
+        },
+        {
+          "title": "咖啡与书",
+          "desc": "周末的闲暇时光",
+          "url": "https://images.unsplash.com/photo-1511926216795-94b442388aa3?w=800&q=80",
+          "date": "2023-10-12"
+        },
+         {
+          "title": "山川湖海",
+          "desc": "旅行中的风景",
+          "url": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&q=80",
+          "date": "2023-09-28"
+        }
+      ]
+    },
+    {
+      "id": "videos",
+      "title": "🎬 放映室",
+      "desc": "记录动态的生活",
+      "type": "video",
+      "items": [
+        {
+          "title": "Vlog: 城市漫步",
+          "desc": "在城市的街道中寻找烟火气",
+          "url": "src/assets/toxic-plan-final.mp4",
+          "date": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "id": "links",
+      "title": "🔗 传送门",
+      "desc": "常用工具与网站收藏",
+      "type": "link",
+      "items": [
+        {
+          "title": "Dribbble",
+          "desc": "全球顶尖设计师的作品分享社区",
+          "url": "https://dribbble.com",
+          "tag": "Design"
+        },
+        {
+          "title": "Notion",
+          "desc": "我的第二大脑，知识管理工具",
+          "url": "https://notion.so",
+          "tag": "Productivity"
+        },
+         {
+          "title": "Vercel",
+          "desc": "极速部署你的网站",
+          "url": "https://vercel.com",
+          "tag": "Dev"
+        }
+      ]
+    }
+  ]
+}
