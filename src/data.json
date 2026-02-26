@@ -62,9 +62,56 @@
     {
       "id": "docs",
       "title": "📚 项目文档",
-      "desc": "精选文档与阅读材料",
+      "desc": "项目主要文档",
       "type": "pdf",
       "items": [
+        {
+          "title": "Web App Creator",
+          "desc": "从零搭建 Next.js + Supabase 全栈网站的 skill",
+          "children": [
+            {
+              "title": "SKILL.md",
+              "desc": "skill 主文件",
+              "url": "/文档/web-app-create/SKILL.md"
+            },
+            {
+              "title": "web-app-creator-prompt.md",
+              "desc": "完整提示词",
+              "url": "/文档/web-app-create/web-app-creator-prompt.md"
+            },
+            {
+              "title": "visual-guides",
+              "desc": "7 个视觉指南",
+              "children": [
+                { "title": "01-架构图", "url": "/文档/web-app-create/visual-guides/01-architecture-visual.md" },
+                { "title": "02-Supabase 配置", "url": "/文档/web-app-create/visual-guides/02-supabase-setup-visual.md" },
+                { "title": "03-组件库", "url": "/文档/web-app-create/visual-guides/03-component-library-visual.md" },
+                { "title": "04-部署", "url": "/文档/web-app-create/visual-guides/04-deployment-visual.md" },
+                { "title": "05-初始化脚本", "url": "/文档/web-app-create/visual-guides/05-init-script-visual.md" },
+                { "title": "06-Supabase 脚本", "url": "/文档/web-app-create/visual-guides/06-setup-supabase-script-visual.md" },
+                { "title": "07-Skill 主界面", "url": "/文档/web-app-create/visual-guides/07-skill-main-visual.md" }
+              ]
+            },
+            {
+              "title": "scripts",
+              "desc": "2 个脚本文件",
+              "children": [
+                { "title": "init-project.sh", "url": "/文档/web-app-create/scripts/init-project.sh" },
+                { "title": "setup-supabase.sh", "url": "/文档/web-app-create/scripts/setup-supabase.sh" }
+              ]
+            },
+            {
+              "title": "references",
+              "desc": "4 个参考文档",
+              "children": [
+                { "title": "架构设计", "url": "/文档/web-app-create/references/architecture.md" },
+                { "title": "Supabase 配置", "url": "/文档/web-app-create/references/supabase-setup.md" },
+                { "title": "组件库", "url": "/文档/web-app-create/references/component-library.md" },
+                { "title": "部署指南", "url": "/文档/web-app-create/references/deployment.md" }
+              ]
+            }
+          ]
+        },
         {
           "title": "2024 年度计划",
           "desc": "关于未来一年的详细规划与目标拆解",
@@ -78,23 +125,18 @@
           "date": "2023-12-20"
         },
         {
-          "title": "AI 产品设计",
-          "desc": "AI 相关产品设计文档",
+          "title": "toxic-plan",
+          "desc": "prd和ui规范文档",
           "children": [
             {
               "title": "产品需求文档 PRD",
-              "desc": "下一代 AI 助手产品需求",
-              "url": "#"
+              "desc": "prd",
+              "url": "/文档/PRD-toxic-plan.md"
             },
             {
               "title": "UI 设计稿",
-              "desc": "Figma 设计稿链接",
-              "url": "#"
-            },
-            {
-              "title": "技术方案",
-              "desc": "后端架构设计方案",
-              "url": "#"
+              "desc": "ui",
+              "url": "/文档/UI-设计规范.md"
             }
           ]
         }
