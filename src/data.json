@@ -1,33 +1,47 @@
 {
   "siteInfo": {
     "title": "Noeva's Space",
-    "description": "收集灵感，记录生活。这是我的个人数字花园。",
+    "description": "noeva的个人数字花园。",
     "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=ffdfbf"
   },
   "sections": [
     {
-      "id": "docs",
-      "title": "📚 藏书阁",
-      "desc": "精选文档与阅读材料",
-      "type": "pdf",
+      "id": "links",
+      "title": "🔗 链接",
+      "desc": "个人项目的网址链接",
+      "type": "link",
       "items": [
         {
-          "title": "2024 年度计划",
-          "desc": "关于未来一年的详细规划与目标拆解",
-          "url": "#",
-          "date": "2024-01-15"
+          "title": "toxic-plan",
+          "desc": "个人全栈开发一站式ai产品",
+          "url": "https://pi-drab.vercel.app/",
+          "tag": "Design"
+        }
+      ]
+    },
+    {
+      "id": "videos",
+      "title": "🎬 介绍视频",
+      "desc": "个人产品的宣传+体验",
+      "type": "video",
+      "items": [
+        {
+          "title": "remotion：toxic-plan产品介绍",
+          "desc": "个人vibecoding产品介绍视频，remotion制作",
+          "url": "/videos/toxic-plan-final.mp4",
+          "date": "2023-08-10"
         },
         {
-          "title": "设计灵感手册",
-          "desc": "收集的优秀UI/UX设计案例分析",
-          "url": "#",
-          "date": "2023-12-20"
+          "title": "remotion：全栈开发skills介绍",
+          "desc": "个人skills的介绍视频，remotion制作",
+          "url": "/videos/skill-intro.mp4",
+          "date": "2023-08-10"
         }
       ]
     },
     {
       "id": "gallery",
-      "title": "🖼️ 影像集",
+      "title": "🖼️ 图片集",
       "desc": "定格美好瞬间",
       "type": "image",
       "items": [
@@ -52,42 +66,22 @@
       ]
     },
     {
-      "id": "videos",
-      "title": "🎬 介绍视频",
-      "desc": "个人产品的宣传+体验",
-      "type": "video",
+      "id": "docs",
+      "title": "📚 项目文档",
+      "desc": "精选文档与阅读材料",
+      "type": "pdf",
       "items": [
         {
-          "title": "remotion：toxic-plan产品介绍",
-          "desc": "个人vibecoding产品介绍视频，remotion制作",
-          "url": "/videos/toxic-plan-final.mp4",
-          "date": "2023-08-10"
-        }
-      ]
-    },
-    {
-      "id": "links",
-      "title": "🔗 传送门",
-      "desc": "常用工具与网站收藏",
-      "type": "link",
-      "items": [
-        {
-          "title": "Dribbble",
-          "desc": "全球顶尖设计师的作品分享社区",
-          "url": "https://dribbble.com",
-          "tag": "Design"
+          "title": "2024 年度计划",
+          "desc": "关于未来一年的详细规划与目标拆解",
+          "url": "#",
+          "date": "2024-01-15"
         },
         {
-          "title": "Notion",
-          "desc": "我的第二大脑，知识管理工具",
-          "url": "https://notion.so",
-          "tag": "Productivity"
-        },
-         {
-          "title": "Vercel",
-          "desc": "极速部署你的网站",
-          "url": "https://vercel.com",
-          "tag": "Dev"
+          "title": "设计灵感手册",
+          "desc": "收集的优秀UI/UX设计案例分析",
+          "url": "#",
+          "date": "2023-12-20"
         }
       ]
     }
