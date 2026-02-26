@@ -67,8 +67,13 @@
       "items": [
         {
           "title": "Web App Creator 完整包",
-          "desc": "包含所有 skill 文件、脚本和参考文档",
+          "desc": "包含这个 skill 的所有文件",
           "url": "/downloads/web-app-create.zip"
+        },
+        {
+          "title": "选择器功能插件包",
+          "desc": "解决选择困难症问题插件，可一键部署到chrome中使用",
+          "url": "downloads/extension.zip"
         }
       ]
     },
