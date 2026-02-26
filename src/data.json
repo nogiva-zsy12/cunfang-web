@@ -60,6 +60,19 @@
       ]
     },
     {
+      "id": "downloads",
+      "title": "📦 资源下载",
+      "desc": "完整文件夹下载",
+      "type": "folder",
+      "items": [
+        {
+          "title": "Web App Creator 完整包",
+          "desc": "包含所有 skill 文件、脚本和参考文档",
+          "url": "/downloads/web-app-create.zip"
+        }
+      ]
+    },
+    {
       "id": "docs",
       "title": "📚 项目文档",
       "desc": "项目主要文档",

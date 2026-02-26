@@ -61,6 +61,7 @@ function App() {
             <div className={`grid gap-6 ${
               section.type === 'link' ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' :
               section.type === 'image' ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' :
+              section.type === 'folder' ? 'grid-cols-1 md:grid-cols-2' :
               'grid-cols-1 md:grid-cols-2'
             }`}>
               {section.items.map((item, index) => (
@@ -214,7 +215,32 @@ function Card({ type, item }) {
     );
   }
 
-  // 4. 文档卡片
+  // 4. 文件夹下载卡片
+  if (type === 'folder') {
+    return (
+      <div className="group bg-white rounded-2xl p-6 border border-stone-100 shadow-sm hover:shadow-md hover:border-amber-200 transition-all flex items-start gap-5">
+        <div className="shrink-0 p-4 bg-gradient-to-br from-amber-100 to-orange-100 text-orange-500 rounded-xl group-hover:scale-110 transition-transform duration-300">
+          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+        </div>
+        <div className="flex-grow min-w-0 py-1">
+          <h3 className="text-lg font-bold text-stone-800 truncate group-hover:text-amber-600 transition-colors">{item.title}</h3>
+          <p className="text-sm text-stone-500 mt-1 line-clamp-2">{item.desc}</p>
+          <div className="mt-4">
+            <a href={item.url} download className="inline-flex items-center gap-2 text-xs font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 px-4 py-2 rounded-full transition-all shadow-sm hover:shadow-md">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+              </svg>
+              下载完整文件夹
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // 5. 文档卡片
   return (
     <div className="group bg-white rounded-2xl p-5 border border-stone-100 shadow-sm hover:shadow-md hover:border-amber-200 transition-all flex items-start gap-5">
       <div className="shrink-0 p-4 bg-[#FFF4E6] text-[#FF9500] rounded-xl group-hover:scale-110 transition-transform duration-300">
