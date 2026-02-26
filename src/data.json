@@ -46,22 +46,16 @@
       "type": "image",
       "items": [
         {
-          "title": "秋日午后",
-          "desc": "阳光洒在书桌上的温暖时刻",
-          "url": "https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=800&q=80",
+          "title": "产品宣传图",
+          "desc": "stmnt产品on brief图",
+          "url": "/photos/20260226-110013.jpeg",
           "date": "2023-11-05"
         },
         {
-          "title": "咖啡与书",
-          "desc": "周末的闲暇时光",
-          "url": "https://images.unsplash.com/photo-1511926216795-94b442388aa3?w=800&q=80",
+          "title": "产品宣传图",
+          "desc": "stmnt品牌产品手卡",
+          "url": "/photos/20260226-110038.jpeg",
           "date": "2023-10-12"
-        },
-         {
-          "title": "山川湖海",
-          "desc": "旅行中的风景",
-          "url": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&q=80",
-          "date": "2023-09-28"
         }
       ]
     },
