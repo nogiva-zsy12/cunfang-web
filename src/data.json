@@ -53,13 +53,13 @@
     },
     {
       "id": "videos",
-      "title": "🎬 放映室",
-      "desc": "记录动态的生活",
+      "title": "🎬 介绍视频",
+      "desc": "个人产品的宣传+体验",
       "type": "video",
       "items": [
         {
-          "title": "Vlog: 城市漫步",
-          "desc": "在城市的街道中寻找烟火气",
+          "title": "remotion：toxic-plan产品介绍",
+          "desc": "个人vibecoding产品介绍视频，remotion制作",
           "url": "/videos/toxic-plan-final.mp4",
           "date": "2023-08-10"
         }

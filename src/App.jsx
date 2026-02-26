@@ -112,7 +112,7 @@ function Card({ type, item }) {
     return (
       <div className="bg-white rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-md transition-all group">
         <div className="aspect-video bg-stone-900 relative">
-          <video controls className="w-full h-full object-cover" src={item.url} poster={item.poster || ''}>
+          <video controls className="w-full h-full object-contain" src={item.url} poster={item.poster || ''}>
              Your browser does not support the video tag.
           </video>
         </div>
