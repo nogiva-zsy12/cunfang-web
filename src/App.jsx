@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import data from './data.json';
 
 function App() {
@@ -81,9 +81,78 @@ function App() {
   );
 }
 
+// 文件夹组件
+function Folder({ item }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="bg-white rounded-2xl border border-stone-100 shadow-sm overflow-hidden">
+      <div 
+        onClick={() => setIsOpen(!isOpen)}
+        className="p-5 flex items-center gap-4 cursor-pointer hover:bg-stone-50 transition-colors"
+      >
+        <div className="shrink-0 p-3 bg-amber-50 text-amber-500 rounded-xl">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+          </svg>
+        </div>
+        <div className="flex-grow">
+          <h3 className="font-bold text-stone-800">{item.title}</h3>
+          <p className="text-sm text-stone-400">{item.desc}</p>
+        </div>
+        <svg 
+          className={`w-5 h-5 text-stone-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+      
+      {/* 文件夹内容 */}
+      {isOpen && item.children && (
+        <div className="border-t border-stone-100 bg-stone-50/50 p-4 space-y-2">
+          {item.children.map((child, idx) => (
+            <DocCard key={idx} item={child} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// 文档卡片组件（精简版，用于文件夹内）
+function DocCard({ item }) {
+  return (
+    <div className="group bg-white rounded-xl p-4 border border-stone-100 shadow-sm hover:shadow-md hover:border-amber-200 transition-all flex items-center gap-4">
+      <div className="shrink-0 p-2 bg-[#FFF4E6] text-[#FF9500] rounded-lg">
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+      </div>
+      <div className="flex-grow min-w-0">
+        <h4 className="font-medium text-stone-800 truncate group-hover:text-amber-600 transition-colors">{item.title}</h4>
+        <p className="text-xs text-stone-400 truncate">{item.desc}</p>
+      </div>
+      <div className="flex gap-2">
+        <a href={item.url} target="_blank" rel="noreferrer" className="text-xs font-bold text-amber-600 hover:text-amber-700 bg-amber-50 px-3 py-1.5 rounded-full transition-colors">
+          预览
+        </a>
+        <a href={item.url} download className="text-xs font-medium text-stone-400 hover:text-stone-600 px-2 transition-colors">
+          下载
+        </a>
+      </div>
+    </div>
+  );
+}
+
 // 通用卡片组件
 function Card({ type, item }) {
   const openLink = () => window.open(item.url, '_blank');
+
+  // 文件夹类型
+  if (item.children) {
+    return <Folder item={item} />;
+  }
 
   // 1. 链接卡片
   if (type === 'link') {
