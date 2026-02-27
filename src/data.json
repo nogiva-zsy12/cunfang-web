@@ -2,7 +2,7 @@
   "siteInfo": {
     "title": "Noeva's Space",
     "description": "noeva的个人数字花园。",
-    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=ffdfbf"
+    "avatar": "/avatars/felix.svg"
   },
   "sections": [
     {
@@ -73,7 +73,7 @@
         {
           "title": "选择器功能插件包",
           "desc": "解决选择困难症问题插件，可一键部署到chrome中使用",
-          "url": "downloads/extension.zip"
+          "url": "/downloads/extension.zip"
         }
       ]
     },
